@@ -70,6 +70,7 @@ namespace ProjetoMosquitoVelho
             this.txtUsuario.Size = new System.Drawing.Size(198, 26);
             this.txtUsuario.TabIndex = 0;
             this.txtUsuario.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtUsuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUsuario_KeyDown);
             // 
             // txtSenha
             // 
@@ -81,6 +82,7 @@ namespace ProjetoMosquitoVelho
             this.txtSenha.Size = new System.Drawing.Size(198, 25);
             this.txtSenha.TabIndex = 1;
             this.txtSenha.TabStop = false;
+            this.txtSenha.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSenha_KeyDown);
             // 
             // lblSenha
             // 
@@ -102,6 +104,8 @@ namespace ProjetoMosquitoVelho
             this.btnEntrar.TabIndex = 2;
             this.btnEntrar.Text = "&Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
+            this.btnEntrar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnEntrar_KeyDown);
             // 
             // btnSair
             // 

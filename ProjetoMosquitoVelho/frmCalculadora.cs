@@ -48,46 +48,58 @@ namespace ProjetoMosquitoVelho
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //executando o metodo limparCampos
             limparCampos();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             double num1, num2, resp = 0;
-            num1 = Convert.ToDouble(txtNum1.Text);
-            num2 = Convert.ToDouble(txtNum2.Text);
 
-            //instanciar o objeto/classe
-            Operacoes op = new Operacoes();
-            if (rdbSomar.Checked)
+            try
             {
-                resp = op.somar(num1, num2);
-            }
-            if (rdbSubtrair.Checked)
-            {
-                resp = op.subtrair(num1, num2);
-            }
-            if (rdbMultiplicar.Checked)
-            {
-                resp = op.multiplicar(num1, num2);
-            }
-            if (rdbDividir.Checked)
-            {
-                if (num2 == 0)
+
+
+                num1 = Convert.ToDouble(txtNum1.Text);
+                num2 = Convert.ToDouble(txtNum2.Text);
+
+                //instanciar o objeto/classe
+                Operacoes op = new Operacoes();
+                if (rdbSomar.Checked)
                 {
-                    MessageBox.Show("impossível divisão por 0","sistemaABC",MessageBoxButtons.OK,MessageBoxIcon.Warning,MessageBoxDefaultButton.Button1);
-                    //executar o metodo limparCampos
-                    limparCampos();
-
+                    resp = op.somar(num1, num2);
                 }
-                else
+                if (rdbSubtrair.Checked)
                 {
-                    resp = op.dividir(num1, num2);
+                    resp = op.subtrair(num1, num2);
                 }
+                if (rdbMultiplicar.Checked)
+                {
+                    resp = op.multiplicar(num1, num2);
+                }
+                if (rdbDividir.Checked)
+                {
+                    if (num2 == 0)
+                    {
+                        MessageBox.Show("impossível divisão por 0", "sistemaABC", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
+                        //executar o metodo limparCampos
+                        limparCampos();
+
+                    }
+                    else
+                    {
+                        resp = op.dividir(num1, num2);
+                    }
+                }
+
+                lblResposta.Text = resp.ToString();
             }
+            catch (Exception)
+            {
 
-            lblResposta.Text = resp.ToString();
-
+                MessageBox.Show("insira somente números");
+                limparCampos();
+            }
         }
 
         private void btnSair_Click(object sender, EventArgs e)
