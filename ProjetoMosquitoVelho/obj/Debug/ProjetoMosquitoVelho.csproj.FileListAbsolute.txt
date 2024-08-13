@@ -14,3 +14,4 @@ C:\Users\willian.gcmagnabosco\Documents\Visual Studio 2019\EmpresaABC\ProjetoMos
 C:\Users\willian.gcmagnabosco\Documents\Visual Studio 2019\EmpresaABC\ProjetoMosquitoVelho\obj\Debug\ProjetoMosquitoVelho.frmCalculadora.resources
 C:\Users\willian.gcmagnabosco\Documents\Visual Studio 2019\EmpresaABC\ProjetoMosquitoVelho\obj\Debug\ProjetoMosquitoVelho.frmMenuPrincipal.resources
 C:\Users\willian.gcmagnabosco\Documents\Visual Studio 2019\EmpresaABC\ProjetoMosquitoVelho\obj\Debug\ProjetoMosquitoVelho.frmFuncionarios.resources
+C:\Users\willian.gcmagnabosco\Documents\Visual Studio 2019\EmpresaABC\ProjetoMosquitoVelho\obj\Debug\ProjetoMosquitoVelho.frmProdutos.resources
