@@ -139,6 +139,7 @@ namespace ProjetoMosquitoVelho
             this.btnVoltar.TabIndex = 7;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // ltbProdutos
             // 
@@ -212,6 +213,7 @@ namespace ProjetoMosquitoVelho
             this.lblEscolhido.Size = new System.Drawing.Size(78, 20);
             this.lblEscolhido.TabIndex = 9;
             this.lblEscolhido.Text = "Escolhido";
+            this.lblEscolhido.Click += new System.EventHandler(this.lblEscolhido_Click);
             // 
             // lblProdutoselecionado
             // 
