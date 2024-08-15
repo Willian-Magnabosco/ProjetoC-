@@ -82,6 +82,7 @@ namespace ProjetoMosquitoVelho
             this.txtSenha.Size = new System.Drawing.Size(198, 25);
             this.txtSenha.TabIndex = 1;
             this.txtSenha.TabStop = false;
+            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             this.txtSenha.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSenha_KeyDown);
             // 
             // lblSenha

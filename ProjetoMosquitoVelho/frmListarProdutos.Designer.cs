@@ -38,6 +38,8 @@ namespace ProjetoMosquitoVelho
             this.lblListadeprodutos = new System.Windows.Forms.Label();
             this.cbbListaritems = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnTestarPessoa = new System.Windows.Forms.Button();
+            this.lblMostrapessoa = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCarregar
@@ -130,11 +132,34 @@ namespace ProjetoMosquitoVelho
             this.label1.TabIndex = 12;
             this.label1.Text = "Listar items";
             // 
+            // btnTestarPessoa
+            // 
+            this.btnTestarPessoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTestarPessoa.Location = new System.Drawing.Point(211, 260);
+            this.btnTestarPessoa.Name = "btnTestarPessoa";
+            this.btnTestarPessoa.Size = new System.Drawing.Size(121, 36);
+            this.btnTestarPessoa.TabIndex = 14;
+            this.btnTestarPessoa.Text = "Testar pessoa";
+            this.btnTestarPessoa.UseVisualStyleBackColor = true;
+            this.btnTestarPessoa.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lblMostrapessoa
+            // 
+            this.lblMostrapessoa.AutoSize = true;
+            this.lblMostrapessoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMostrapessoa.Location = new System.Drawing.Point(91, 260);
+            this.lblMostrapessoa.Name = "lblMostrapessoa";
+            this.lblMostrapessoa.Size = new System.Drawing.Size(114, 20);
+            this.lblMostrapessoa.TabIndex = 15;
+            this.lblMostrapessoa.Text = "Mostra pessoa";
+            // 
             // frmListarProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblMostrapessoa);
+            this.Controls.Add(this.btnTestarPessoa);
             this.Controls.Add(this.cbbListaritems);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblListadeprodutos);
@@ -165,5 +190,7 @@ namespace ProjetoMosquitoVelho
         private System.Windows.Forms.Label lblListadeprodutos;
         private System.Windows.Forms.ComboBox cbbListaritems;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnTestarPessoa;
+        private System.Windows.Forms.Label lblMostrapessoa;
     }
 }

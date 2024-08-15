@@ -97,6 +97,21 @@ namespace ProjetoMosquitoVelho
 
         private void btnEntrar_KeyDown(object sender, KeyEventArgs e)
         {
+            if (txtUsuario.Text.Equals ("senac") && txtSenha.Text.Equals("12345"))
+            {
+                frmMenuPrincipal abrir = new frmMenuPrincipal();
+                abrir.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Ususario ou senha invalidos!!!");
+                limparCampos();
+            }
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

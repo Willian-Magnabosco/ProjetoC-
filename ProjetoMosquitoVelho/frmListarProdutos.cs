@@ -150,5 +150,13 @@ namespace ProjetoMosquitoVelho
                 cbbListaritems.Items.Add(produtos[i]);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //instanciando o objeto pessoa
+            Pessoa p = new Pessoa();
+            p.Nome = "senac";
+            lblMostrapessoa.Text = p.Nome;
+        }
     }
 }
