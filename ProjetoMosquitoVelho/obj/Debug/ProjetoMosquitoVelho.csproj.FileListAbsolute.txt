@@ -16,3 +16,7 @@ C:\Users\willian.gcmagnabosco\Documents\Visual Studio 2019\EmpresaABC\ProjetoMos
 C:\Users\willian.gcmagnabosco\Documents\Visual Studio 2019\EmpresaABC\ProjetoMosquitoVelho\obj\Debug\ProjetoMosquitoVelho.frmFuncionarios.resources
 C:\Users\willian.gcmagnabosco\Documents\Visual Studio 2019\EmpresaABC\ProjetoMosquitoVelho\obj\Debug\ProjetoMosquitoVelho.frmProdutos.resources
 C:\Users\willian.gcmagnabosco\Documents\Visual Studio 2019\EmpresaABC\ProjetoMosquitoVelho\obj\Debug\ProjetoMosquitoVelho.frmListarProdutos.resources
+C:\Users\willian.gcmagnabosco\Documents\Visual Studio 2019\EmpresaABC\ProjetoMosquitoVelho\bin\Debug\ProjetoMosquitoVelho.exe.manifest
+C:\Users\willian.gcmagnabosco\Documents\Visual Studio 2019\EmpresaABC\ProjetoMosquitoVelho\bin\Debug\ProjetoMosquitoVelho.application
+C:\Users\willian.gcmagnabosco\Documents\Visual Studio 2019\EmpresaABC\ProjetoMosquitoVelho\obj\Debug\ProjetoMosquitoVelho.exe.manifest
+C:\Users\willian.gcmagnabosco\Documents\Visual Studio 2019\EmpresaABC\ProjetoMosquitoVelho\obj\Debug\ProjetoMosquitoVelho.application

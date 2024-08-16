@@ -61,7 +61,7 @@ namespace ProjetoMosquitoVelho
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            frmLogin abrir = new frmLogin();
+            frmMenuPrincipal abrir = new frmMenuPrincipal();
             abrir.Show();
             this.Hide();
         }
@@ -157,6 +157,38 @@ namespace ProjetoMosquitoVelho
             Pessoa p = new Pessoa();
             p.Nome = "senac";
             lblMostrapessoa.Text = p.Nome;
+        }
+
+        private void lblMostrapessoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReserva_Click(object sender, EventArgs e)
+        {
+            Bilhete bilhete = new Bilhete();
+
+            bilhete.Documento = txtDocumento.Text;
+            bilhete.NumeroCartao = mtbNumerocartao.Text;
+
+            lblMostrardocumento.Text = bilhete.Documento;
+            lblnumerocartao.Text = bilhete.NumeroCartao;
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mtbNumerocartao_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
     }
 }
