@@ -47,6 +47,8 @@ namespace ProjetoMosquitoVelho
             this.lblMostrardocumento = new System.Windows.Forms.Label();
             this.mtbNumerocartao = new System.Windows.Forms.MaskedTextBox();
             this.lblMostrarnumero = new System.Windows.Forms.Label();
+            this.btnTestalogin = new System.Windows.Forms.Button();
+            this.txtTestalogin = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnCarregar
@@ -176,7 +178,7 @@ namespace ProjetoMosquitoVelho
             // 
             this.lblDocumentos.AutoSize = true;
             this.lblDocumentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDocumentos.Location = new System.Drawing.Point(165, 244);
+            this.lblDocumentos.Location = new System.Drawing.Point(17, 317);
             this.lblDocumentos.Name = "lblDocumentos";
             this.lblDocumentos.Size = new System.Drawing.Size(100, 20);
             this.lblDocumentos.TabIndex = 18;
@@ -185,7 +187,7 @@ namespace ProjetoMosquitoVelho
             // 
             // txtDocumento
             // 
-            this.txtDocumento.Location = new System.Drawing.Point(169, 270);
+            this.txtDocumento.Location = new System.Drawing.Point(21, 343);
             this.txtDocumento.MaxLength = 30;
             this.txtDocumento.Name = "txtDocumento";
             this.txtDocumento.Size = new System.Drawing.Size(100, 20);
@@ -195,7 +197,7 @@ namespace ProjetoMosquitoVelho
             // 
             this.lblnumerocartao.AutoSize = true;
             this.lblnumerocartao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnumerocartao.Location = new System.Drawing.Point(165, 324);
+            this.lblnumerocartao.Location = new System.Drawing.Point(17, 397);
             this.lblnumerocartao.Name = "lblnumerocartao";
             this.lblnumerocartao.Size = new System.Drawing.Size(139, 20);
             this.lblnumerocartao.TabIndex = 21;
@@ -205,7 +207,7 @@ namespace ProjetoMosquitoVelho
             // 
             this.lblMostrardocumento.AutoSize = true;
             this.lblMostrardocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMostrardocumento.Location = new System.Drawing.Point(309, 270);
+            this.lblMostrardocumento.Location = new System.Drawing.Point(161, 343);
             this.lblMostrardocumento.Name = "lblMostrardocumento";
             this.lblMostrardocumento.Size = new System.Drawing.Size(150, 20);
             this.lblMostrardocumento.TabIndex = 22;
@@ -214,7 +216,7 @@ namespace ProjetoMosquitoVelho
             // mtbNumerocartao
             // 
             this.mtbNumerocartao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtbNumerocartao.Location = new System.Drawing.Point(169, 347);
+            this.mtbNumerocartao.Location = new System.Drawing.Point(21, 420);
             this.mtbNumerocartao.Mask = "000,000,000-00";
             this.mtbNumerocartao.Name = "mtbNumerocartao";
             this.mtbNumerocartao.Size = new System.Drawing.Size(128, 26);
@@ -225,17 +227,39 @@ namespace ProjetoMosquitoVelho
             // 
             this.lblMostrarnumero.AutoSize = true;
             this.lblMostrarnumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMostrarnumero.Location = new System.Drawing.Point(309, 347);
+            this.lblMostrarnumero.Location = new System.Drawing.Point(161, 420);
             this.lblMostrarnumero.Name = "lblMostrarnumero";
             this.lblMostrarnumero.Size = new System.Drawing.Size(172, 20);
             this.lblMostrarnumero.TabIndex = 25;
             this.lblMostrarnumero.Text = "mostrar Número cartão";
+            // 
+            // btnTestalogin
+            // 
+            this.btnTestalogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTestalogin.Location = new System.Drawing.Point(190, 260);
+            this.btnTestalogin.Name = "btnTestalogin";
+            this.btnTestalogin.Size = new System.Drawing.Size(121, 36);
+            this.btnTestalogin.TabIndex = 27;
+            this.btnTestalogin.Text = "Testar login";
+            this.btnTestalogin.UseVisualStyleBackColor = true;
+            this.btnTestalogin.Click += new System.EventHandler(this.btnTestalogin_Click);
+            // 
+            // txtTestalogin
+            // 
+            this.txtTestalogin.Location = new System.Drawing.Point(190, 234);
+            this.txtTestalogin.MaxLength = 30;
+            this.txtTestalogin.Name = "txtTestalogin";
+            this.txtTestalogin.Size = new System.Drawing.Size(121, 20);
+            this.txtTestalogin.TabIndex = 28;
+            this.txtTestalogin.TextChanged += new System.EventHandler(this.txtTestalogin_TextChanged);
             // 
             // frmListarProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(960, 450);
+            this.Controls.Add(this.txtTestalogin);
+            this.Controls.Add(this.btnTestalogin);
             this.Controls.Add(this.mtbNumerocartao);
             this.Controls.Add(this.lblMostrarnumero);
             this.Controls.Add(this.lblMostrardocumento);
@@ -284,5 +308,7 @@ namespace ProjetoMosquitoVelho
         private System.Windows.Forms.Label lblMostrardocumento;
         private System.Windows.Forms.MaskedTextBox mtbNumerocartao;
         private System.Windows.Forms.Label lblMostrarnumero;
+        private System.Windows.Forms.Button btnTestalogin;
+        private System.Windows.Forms.TextBox txtTestalogin;
     }
 }

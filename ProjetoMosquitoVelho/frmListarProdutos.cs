@@ -190,5 +190,16 @@ namespace ProjetoMosquitoVelho
         {
 
         }
+
+        private void btnTestalogin_Click(object sender, EventArgs e)
+        {
+            frmLogin abrir = new frmLogin(txtTestalogin.Text);
+            abrir.Show();
+        }
+
+        private void txtTestalogin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

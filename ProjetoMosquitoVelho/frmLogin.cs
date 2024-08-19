@@ -24,7 +24,14 @@ namespace ProjetoMosquitoVelho
 
         public frmLogin()
         {
-            InitializeComponent();   
+            InitializeComponent();
+            
+        }
+        public frmLogin(string nome) 
+        {
+            InitializeComponent();
+            nome = txtUsuario.Text = nome;
+            txtUsuario.Text = nome;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -61,7 +68,7 @@ namespace ProjetoMosquitoVelho
         {
             if (txtUsuario.Text.Equals("senac") && txtSenha.Text.Equals("12345"))
             {
-                frmMenuPrincipal abrir = new frmMenuPrincipal();
+                frmMenuPrincipal abrir = new frmMenuPrincipal(txtUsuario.Text);
                 abrir.Show();
                 this.Hide();
             }

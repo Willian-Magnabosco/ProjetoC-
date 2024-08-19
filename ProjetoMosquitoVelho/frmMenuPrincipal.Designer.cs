@@ -39,6 +39,7 @@ namespace ProjetoMosquitoVelho
             this.btnEventos = new System.Windows.Forms.Button();
             this.btnOrcamentos = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
+            this.lblPegarususario = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnFuncionarios
@@ -153,11 +154,22 @@ namespace ProjetoMosquitoVelho
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
+            // lblPegarususario
+            // 
+            this.lblPegarususario.AutoSize = true;
+            this.lblPegarususario.Location = new System.Drawing.Point(27, 399);
+            this.lblPegarususario.Name = "lblPegarususario";
+            this.lblPegarususario.Size = new System.Drawing.Size(72, 13);
+            this.lblPegarususario.TabIndex = 9;
+            this.lblPegarususario.Text = "Pegar usuario";
+            this.lblPegarususario.Click += new System.EventHandler(this.label1_Click);
+            // 
             // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblPegarususario);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnOrcamentos);
             this.Controls.Add(this.btnEventos);
@@ -175,6 +187,7 @@ namespace ProjetoMosquitoVelho
             this.Text = "frmMenuPrincipal";
             this.Load += new System.EventHandler(this.frmMenuPrincipal_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -189,5 +202,6 @@ namespace ProjetoMosquitoVelho
         private System.Windows.Forms.Button btnEventos;
         private System.Windows.Forms.Button btnOrcamentos;
         private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Label lblPegarususario;
     }
 }

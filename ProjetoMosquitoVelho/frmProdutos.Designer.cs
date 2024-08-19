@@ -46,6 +46,8 @@ namespace ProjetoMosquitoVelho
             this.btnTiraritem = new System.Windows.Forms.Button();
             this.lblEscolhido = new System.Windows.Forms.Label();
             this.lblProdutoselecionado = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.lblUsuarioresultado = new System.Windows.Forms.Label();
             this.pnlCrud.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -225,11 +227,33 @@ namespace ProjetoMosquitoVelho
             this.lblProdutoselecionado.TabIndex = 10;
             this.lblProdutoselecionado.Text = "Produto selecionado";
             // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Location = new System.Drawing.Point(20, 317);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(92, 20);
+            this.lblUsuario.TabIndex = 11;
+            this.lblUsuario.Text = "Olá Usuario";
+            this.lblUsuario.Click += new System.EventHandler(this.lblUsuario_Click);
+            // 
+            // lblUsuarioresultado
+            // 
+            this.lblUsuarioresultado.AutoSize = true;
+            this.lblUsuarioresultado.Location = new System.Drawing.Point(122, 323);
+            this.lblUsuarioresultado.Name = "lblUsuarioresultado";
+            this.lblUsuarioresultado.Size = new System.Drawing.Size(0, 13);
+            this.lblUsuarioresultado.TabIndex = 12;
+            this.lblUsuarioresultado.Click += new System.EventHandler(this.label1_Click);
+            // 
             // frmProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblUsuarioresultado);
+            this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.lblProdutoselecionado);
             this.Controls.Add(this.lblEscolhido);
             this.Controls.Add(this.btnTiraritem);
@@ -270,5 +294,7 @@ namespace ProjetoMosquitoVelho
         private System.Windows.Forms.Button btnTiraritem;
         private System.Windows.Forms.Label lblEscolhido;
         private System.Windows.Forms.Label lblProdutoselecionado;
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Label lblUsuarioresultado;
     }
 }
